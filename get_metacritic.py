@@ -4,11 +4,11 @@ import re
 import string
 
 """
-rotten tomatoes scraper
+review_scraper
 """
 
 def scrape_metacritic():
-
+	"""
 	search_term = raw_input('Enter search term:\n').split()
 	search_term = '%20'.join(search_term)
 
@@ -32,6 +32,8 @@ def scrape_metacritic():
 		
 	movie_url = 'http://www.metacritic.com%s' % suffix
 	print movie_url
+	"""
+	movie_url = raw_input('Enter URL\n')
 
 	juries = {'critics': '/critic-reviews', 'users': '/user-reviews'}
 	valences = {'positive': '?dist=positive', 'negative': '?dist=negative', 'medium': '?dist=neutral'}
@@ -47,7 +49,7 @@ def scrape_metacritic():
 	
 	reviews_url = movie_url + jury_suffix + valence_suffix
 
-	num_pages = 2
+	num_pages = int(raw_input('How many pages?\n'))
 	urls = []
 	
 	destination = raw_input('Choose save name:\n')

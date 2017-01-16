@@ -9,7 +9,7 @@ user asks for.
 
 # this variable maps city names (as they will be displayed to the user) to Yelp's city codes as they appear in urls
 # used later on for constructing the urls to visit
-cities = {'chicago': 'Chicago,+IL','new york': 'New+York,+NY'}
+cities = {'chicago': 'Chicago,+IL','new york': 'New+York,+NY','london': 'London,+United+Kingdom'}
 
 # main user loop
 def get_yelp():
